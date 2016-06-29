@@ -15,10 +15,9 @@ bool sleeping = false;
    wdt_disable();  // disable watchdog
 }  // end of WDT_vect*/
  
-static const u1_t APPEUI[8]  = {0x88, 0x77, 0x66, 0x55, 0x44, 0x33, 0x22, 0x11}; 
-static const u1_t DEVEUI[8]  = {0xA4, 0x17, 0x31, 0x21, 0x37, 0x07, 0xB5, 0x4D}; 
-//http://iot-platform.org:8000/packets.json?node_addr=4D:B5:07:37:21:31:17:A4&order1=id&order2=desc&number=100 
-static const u1_t APPKEY[16] = {0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11};
+static const u1_t APPEUI[8]  = {}; 
+static const u1_t DEVEUI[8]  = {}; 
+static const u1_t APPKEY[16] = {};
 
 // provide APPEUI (8 bytes, LSBF)
 void os_getArtEui (u1_t* buf) {
